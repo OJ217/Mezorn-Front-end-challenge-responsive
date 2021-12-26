@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #4a4a4b, #6a6969);
+  font-family: "Raleway", sans-serif;
+}
+
+.card-container {
+  margin: 100px auto;
+  max-width: 620px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.figure-description {
+  position: absolute;
+  color: #ffffff;
+  z-index: 10;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.figure-description h1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.figure-description h2 {
+  font-size: 16px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.text-container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+#mezorn {
+  background-color: #4a4a49;
+  border-radius: 5px;
+  width: 420px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+  font-size: 18px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+#mezorn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#mezorn i {
+  margin-right: 10px;
+}
+
+#mezorn:hover {
+  background-color: #5c5c5c;
+  cursor: pointer;
+}
+
+.text-container p {
+  margin: 0 auto;
+  width: 420px;
+  font-size: 16px;
+  margin: 30px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.normal {
+  color: #ffffff;
+  background-color: #9a9999;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+
+.normal:hover {
+  background-color: #aeadad;
+  cursor: pointer;
+}
+
+.fa-twitter,
+.fa-instagram {
+  font-size: 1.6em;
+}
+
+.fa-facebook {
+  background-color: #ffffff;
+  color: #9a9999;
+  font-size: 2.5em;
+  transition: 1s ease-in-out;
+}
+
+.fa-facebook:hover {
+  color: #aeadad;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .card-container {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  #mezorn {
+    max-width: 420px;
+    width: auto;
+  }
+  .text-container p {
+    max-width: 420px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .figure-description h1 {
+    font-size: 15px;
+  }
+  .figure-description h2 {
+    font-size: 12px;
+  }
+  #mezorn {
+    font-size: 13.5px;
+  }
+  .text-container p {
+    font-size: 12px;
+  }
+}
